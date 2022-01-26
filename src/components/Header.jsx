@@ -3,10 +3,13 @@ import styled from "styled-components";
 import { auth, googleProvider } from "../firebase";
 
 export default function Header() {
-  const handleAuth = () => {
-    auth.signInWithPopup(googleProvider).then(res => {
+  const handleAuth = async () => {
+    try {
+      const res = await auth.signInWithPopup(googleProvider)
       console.log(res)
-    }).catch(error => alert(error.message))
+    } catch (error) {
+      alert(error.message)
+    }
   };
 
   return (
