@@ -192,6 +192,7 @@ const Login = styled.a`
     color: #000;
     border-color: transparent;
   }
+  cursor: pointer;
 `;
 
 const UserImg = styled.img`
