@@ -5,6 +5,7 @@ import db from "../firebase";
 // import { setMovies } from "../features/movie/movieSlice";
 import { selectUserName } from "../redux/reducers/user";
 import ImgSlider from './ImgSlider';
+import Viewers from './Viewers';
 
 export default function Home() {
     const dispatch = useDispatch();
@@ -13,6 +14,7 @@ export default function Home() {
     return (
         <Container>
             <ImgSlider />
+            <Viewers />
         </Container>
     )
 }
