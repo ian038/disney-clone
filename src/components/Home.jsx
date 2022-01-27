@@ -7,6 +7,7 @@ import { selectUserName } from "../redux/reducers/user";
 import ImgSlider from './ImgSlider';
 import Viewers from './Viewers';
 import Recommends from './Recommends';
+import NewDisney from './NewDisney'
 
 export default function Home() {
     const dispatch = useDispatch();
@@ -54,6 +55,7 @@ export default function Home() {
             <ImgSlider />
             <Viewers />
             <Recommends />
+            <NewDisney />
         </Container>
     )
 }
