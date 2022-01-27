@@ -38,6 +38,8 @@ export default function Home() {
                     case "trending":
                         trending = [...trending, { id: doc.id, ...doc.data() }];
                         break;
+                    default:
+                        console.log('Base case')
                 }
             });
 

@@ -41,7 +41,7 @@ export default function Header() {
         navigate('/')
       }
     } catch (error) {
-      alert(error.message)
+      console.log('Handle auth error: ', error)
     }
   };
 
