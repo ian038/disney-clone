@@ -9,6 +9,7 @@ import Viewers from './Viewers';
 import Recommends from './Recommends';
 import NewDisney from './NewDisney'
 import Originals from './Originals';
+import Trending from './Trending';
 
 export default function Home() {
     const dispatch = useDispatch();
@@ -58,6 +59,7 @@ export default function Home() {
             <Recommends />
             <NewDisney />
             <Originals />
+            <Trending />
         </Container>
     )
 }
